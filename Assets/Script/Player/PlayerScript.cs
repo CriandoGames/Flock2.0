@@ -2,10 +2,9 @@
 
 namespace Script.Player
 {
-    public class PlayerScript : PlayerControll
+    public class PlayerScript : PlayerBase, IMotion
     {
-       
-        
+          
         public override void Start()
         {
             base.Start();
@@ -17,11 +16,11 @@ namespace Script.Player
             Move();
         }
 
-        public override void Move()
+        public void Move()
         {
             if (Input.GetMouseButtonDown(0))
             {
-                AnimationFlyer(ForceFlayer,animator);
+                playerAnimator.AnimationFlyer(ForceFlayer);
                 
                 rigidbody2D.AddForce(new Vector2(0,ForceFlayer)); 
             }
