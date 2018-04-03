@@ -5,7 +5,7 @@ namespace Script.Player
     public class PlayerScript : PlayerBase, IMotion
     {
           
-        public override void Start()
+       public override void Start()
         {
             base.Start();
         }
