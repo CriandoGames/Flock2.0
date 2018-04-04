@@ -2,7 +2,7 @@
 
 namespace Script.Player
 {
-    public abstract class PlayerBase : MonoBehaviour 
+    public abstract class PlayerBase : MonoBehaviour , IMotion
     {
         [SerializeField] protected internal float ForceFlayer = new float();
 
@@ -20,7 +20,16 @@ namespace Script.Player
             
             this.rigidbody2D = GetComponent<Rigidbody2D>();
             
-
+        }
+        
+        public void Move()
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                playerAnimator.AnimationFlyer(ForceFlayer);
+                
+                rigidbody2D.AddForce(new Vector2(0,ForceFlayer)); 
+            }
         }
 
     }

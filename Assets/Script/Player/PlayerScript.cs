@@ -2,7 +2,7 @@
 
 namespace Script.Player
 {
-    public class PlayerScript : PlayerBase, IMotion
+    public class PlayerScript : PlayerBase
     {
           
          public override void Start()
