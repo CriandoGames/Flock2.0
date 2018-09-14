@@ -53,6 +53,7 @@ namespace Script.Player
                 Damage();
            }
 
+            Debug.Log("ok");
         }
 
         public void Damage()
