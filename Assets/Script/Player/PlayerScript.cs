@@ -4,17 +4,11 @@ namespace Script.Player
 {
     public class PlayerScript : PlayerBase
     {
-        new void Start()
-        {
-            base.Start();
-        }
 
-        void Update()
+        private void FixedUpdate()
         {
             Move();
         }
 
-
-     
     }
 }

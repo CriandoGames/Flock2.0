@@ -10,9 +10,7 @@ namespace Assets.Script.Obstacles
         [SerializeField]
         protected float Speed;
         [SerializeField]
-        protected float YPositionMax;
-        [SerializeField]
-        protected float YPositionMin;
+        protected float LimiteScreem;
 
         protected new Rigidbody2D rigidbody;
 
@@ -20,27 +18,26 @@ namespace Assets.Script.Obstacles
         protected void Start()
         {
             rigidbody = GetComponent<Rigidbody2D>();
-            SetConfig();
         }
 
         protected void FixedUpdate()
         {
             Mov();
+            SetOff();
         }
 
-        protected void SetConfig()
-        {
-
-            float posy = Random.Range(YPositionMin, YPositionMax);
-            transform.position = new Vector3(transform.position.x, posy);
-        }
-       
         protected void Mov()
         {
             rigidbody.velocity = new Vector2(Speed, 0);
         }
 
-    
+        protected void SetOff()
+        {
+            if (transform.position.x <= LimiteScreem){
+                gameObject.SetActive(false);
+            }
+        }
+
 
     }
 }
