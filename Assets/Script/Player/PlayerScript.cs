@@ -4,13 +4,12 @@ namespace Script.Player
 {
     public class PlayerScript : PlayerBase
     {
-          
-         public override void Start()
+        new void Start()
         {
             base.Start();
         }
 
-        private void Update()
+        void Update()
         {
             Move();
         }

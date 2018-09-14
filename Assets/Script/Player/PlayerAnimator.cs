@@ -14,14 +14,14 @@ namespace Script.Player
         }
 
 
-        public void AnimationDie(bool value)
+        public void AnimationDie()
         {
-            this.animator.SetBool("die", value);
+            this.animator.SetTrigger("Die");
         }
 
-        public void AnimationFlyer(float value)
+        public void AnimationFlyer()
         {
-            this.animator.SetFloat("flyer", value);
+            this.animator.SetTrigger("Flying");
         }
     }
 }

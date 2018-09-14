@@ -1,18 +1,32 @@
 ﻿using UnityEngine;
+using System;
+using Assets.Script.Player;
 
 namespace Script.Player
 {
-    public abstract class PlayerBase : MonoBehaviour , IMotion
-    {
-        [SerializeField] protected internal float ForceFlayer = new float();
 
-        protected Rigidbody2D rigidbody2D;
+    public enum Tag
+    {
+        OBSTACULOS,
+        COIN
+    }
+
+    [RequireComponent(typeof(Rigidbody2D))]
+    public abstract class PlayerBase : MonoBehaviour , IMotion , IDamage
+    {
+        [Header("Config Player")]
+
+        [SerializeField]
+        protected internal float ForceFlayer = new float();
+
+        protected new Rigidbody2D rigidbody2D;
 
         protected Animator animator;
         
         protected PlayerAnimator playerAnimator;
 
-        public virtual void Start()
+
+        public void Start()
         {
             animator = GetComponentInChildren<Animator>();
             
@@ -26,11 +40,24 @@ namespace Script.Player
         {
             if (Input.GetMouseButtonDown(0))
             {
-                playerAnimator.AnimationFlyer(ForceFlayer);
+                playerAnimator.AnimationFlyer();
                 
                 rigidbody2D.AddForce(new Vector2(0,ForceFlayer)); 
             }
         }
 
+        protected void OnTriggerEnter2D(Collider2D collider)
+        {
+
+         if(collider.CompareTag(Tag.OBSTACULOS.ToString())){
+                Damage();
+           }
+
+        }
+
+        public void Damage()
+        {
+            playerAnimator.AnimationDie();
+        }
     }
 }
