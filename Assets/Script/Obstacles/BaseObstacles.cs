@@ -1,11 +1,9 @@
-﻿using Assets.Script.Common.CammonInterface;
-using Script.Player;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Script.Obstacles
 {
     [RequireComponent(typeof(Rigidbody2D))]
-   public abstract class BaseObstacles : MonoBehaviour , Score
+   public abstract class BaseObstacles : MonoBehaviour 
     {
 
         [Header("Config Obstacle")]
@@ -20,6 +18,7 @@ namespace Assets.Script.Obstacles
         [Header("Config Score")]
         protected GameObject playerPosition;
         protected bool isPass;
+        
 
         protected void Start()
         {
@@ -38,7 +37,7 @@ namespace Assets.Script.Obstacles
         protected void Mov()
         {
             rigidbody.velocity = new Vector2(Speed, 0);
-            Set(1);
+            Set();
         }
 
         protected void SetOff()
@@ -49,13 +48,15 @@ namespace Assets.Script.Obstacles
             }
         }
 
-        public void Set(int value)
+        public void Set()
         {
 
             if (transform.position.x <= playerPosition.transform.position.x && isPass == false)
             {
                 isPass = true;
                 //implemenatar Pontos
+                
+
 
             }
         }

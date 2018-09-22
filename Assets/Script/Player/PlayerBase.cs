@@ -25,7 +25,6 @@ namespace Script.Player
         
         protected PlayerAnimator playerAnimator;
 
-
         public void Start()
         {
             animator = GetComponentInChildren<Animator>();
@@ -35,7 +34,12 @@ namespace Script.Player
             this.rigidbody2D = GetComponent<Rigidbody2D>();
             
         }
-        
+
+        private void FixedUpdate()
+        {
+            Move();
+        }
+
         public void Move()
         {
             if (Input.GetMouseButtonDown(0))

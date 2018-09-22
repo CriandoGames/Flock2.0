@@ -5,10 +5,7 @@ namespace Script.Player
     public class PlayerScript : PlayerBase
     {
 
-        private void FixedUpdate()
-        {
-            Move();
-        }
+     
 
     }
 }
