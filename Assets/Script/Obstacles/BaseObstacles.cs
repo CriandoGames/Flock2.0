@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Game.Script.Data;
+using UnityEngine;
 
 namespace Assets.Script.Obstacles
 {
@@ -55,7 +56,7 @@ namespace Assets.Script.Obstacles
             {
                 isPass = true;
                 //implemenatar Pontos
-                
+                GameController.SendMenssage.SetScore();
 
 
             }

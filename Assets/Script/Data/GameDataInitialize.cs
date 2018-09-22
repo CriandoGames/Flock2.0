@@ -1,6 +1,8 @@
 ﻿//using Assets.Game.Script.Player;
 
+using _Game.Script.Res;
 using Assets.Game.Script.Res;
+using Assets.Script.Player;
 
 namespace _Game.Script.Data
 {
@@ -20,9 +22,9 @@ namespace _Game.Script.Data
         {
             GameController.CurrentStateMachine = new StateMachine();
             GameController.Data = data;
-           // GameController.PartialValues = new PlayerPartialValues();
-           // GameController.PartialValues.ResertScore();
-           // GameController.SendMenssage = new SendMenssageAction();
+            GameController.PartialValues = new PlayerPartialValues();
+           // GameController.PartialValues.ResetScore();
+            GameController.SendMenssage = new SendMenssageAction();
 
         }
     }

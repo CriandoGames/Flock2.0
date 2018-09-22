@@ -1,5 +1,6 @@
 ﻿using Assets.Game.Script.Res;
 using _Game.Script.Res;
+using Assets.Script.Player;
 
 namespace _Game.Script.Data
 {
@@ -8,6 +9,6 @@ namespace _Game.Script.Data
          public static GameData Data { get; internal set; }
          public static StateMachine CurrentStateMachine { get; set; }
          public static SendMenssageAction SendMenssage { get; set; }
-        // public static PlayerPartialValues PartialValues { get; set; }
+         public static PlayerPartialValues PartialValues { get; set; }
     }
 }

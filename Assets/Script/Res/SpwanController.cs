@@ -5,8 +5,6 @@ namespace Assets.Script.Res
 {
     class SpwanController :MonoBehaviour
     {
-
-
         [Header("Conf Manager Spawn")]
         [SerializeField]
         private float rateSpawn;

@@ -12,5 +12,6 @@ namespace _Game.Script.Data
 
         [XmlAttribute("HightScore")]
         public int HightScore;
+
     }
 }

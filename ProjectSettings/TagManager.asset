@@ -6,6 +6,7 @@ TagManager:
   tags:
   - OBSTACULOS
   - COIN
+  - Manager
   layers:
   - Default
   - TransparentFX

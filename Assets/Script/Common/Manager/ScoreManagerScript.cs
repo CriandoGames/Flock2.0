@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Game.Script.Data;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace _Game.Script.Common
@@ -12,21 +13,13 @@ namespace _Game.Script.Common
 
         private void Start()
         {
-            score = 0;
-            
-            textScore.text = score.ToString();
+            GameController.PartialValues.ResetScore(textScore);
         }
 
-        public void SetScore()
+        public void AddScore()
         {
-            score++;
-            textScore.text = score.ToString();
-        }
-
-        public void ResetScore()
-        {
-            score = 0;
-            textScore.text = score.ToString();
+            GameController.PartialValues.SetScore(textScore);
+                
         }
         
     }

@@ -1,6 +1,5 @@
-﻿using UnityEngine;
-using System;
-using Assets.Script.Player;
+﻿using Assets.Script.Player;
+using UnityEngine;
 
 namespace Script.Player
 {
@@ -12,7 +11,7 @@ namespace Script.Player
     }
 
     [RequireComponent(typeof(Rigidbody2D))]
-    public abstract class PlayerBase : MonoBehaviour , IMotion , IDamage
+    public abstract class PlayerBase : MonoBehaviour 
     {
         [Header("Config Player")]
 
@@ -24,6 +23,8 @@ namespace Script.Player
         protected Animator animator;
         
         protected PlayerAnimator playerAnimator;
+
+        protected PlayerPartialValues PartialValues;
 
         public void Start()
         {

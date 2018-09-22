@@ -1,12 +1,13 @@
 ﻿
 using _Game.Script.Data;
+using Assets.Script.Res;
+using UnityEngine;
 
 namespace _Game.Script.Res
 {
-    public  class SendMenssageAction
+    public class SendMenssageAction
     {
        
-
         public void SetWindownOff()
         {
           //  Debug.Log("ENTROU");
@@ -14,7 +15,6 @@ namespace _Game.Script.Res
            // manager.SendMessage("SetWindownOff");
 
         }
-
 
         public void StartGame()
         {
@@ -39,6 +39,11 @@ namespace _Game.Script.Res
             
         }
 
+        public void SetScore()
+        {
+            var manager = GameObject.FindGameObjectWithTag(EnumObjectTagResource.Manager.ToString());
+            manager.SendMessage("AddScore");
+        }
 
     }
 }
