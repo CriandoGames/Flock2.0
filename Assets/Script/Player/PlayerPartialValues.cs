@@ -8,8 +8,6 @@ namespace Assets.Script.Player
         public int Score { get; set; }
         //public int Energy { get; set; } -> Uso Futuro
 
-
-
         public void SetScore(Text value)
         {
             Score++;
