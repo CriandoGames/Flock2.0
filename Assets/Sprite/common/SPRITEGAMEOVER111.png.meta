@@ -1,15 +1,16 @@
 fileFormatVersion: 2
-guid: 65543b9a52fcd6342a9905d66c224d33
+guid: 8b853369939ed314f91879fb4863b342
 TextureImporter:
   fileIDToRecycleName:
-    21300000: play
-    21300002: MENU-NOVO-2018_1
-    21300004: tronco
-    21300006: skin
-    21300008: conta
-    21300010: "op\xE7\xE3o"
+    21300000: SPRITEGAMEOVER111_0
+    21300002: SPRITEGAMEOVER111_1
+    21300004: SPRITEGAMEOVER111_2
+    21300006: SPRITEGAMEOVER111_3
+    21300008: SPRITEGAMEOVER111_4
+    21300010: SPRITEGAMEOVER111_5
+    21300012: SPRITEGAMEOVER111_6
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -27,6 +28,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -35,9 +38,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -46,10 +49,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 90
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,17 +78,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 512
-    resizeAlgorithm: 0
-    textureFormat: 12
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 1
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -94,6 +86,17 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Windows Store Apps
@@ -110,121 +113,141 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: play
+      name: SPRITEGAMEOVER111_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 390
-        width: 264
-        height: 91
+        x: 101
+        y: 950
+        width: 300
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a0ec90ccf439541ad8c79038c57c5f
+      spriteID: 52a9f6cfdbb20b642827faed8354e088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU-NOVO-2018_1
+      name: SPRITEGAMEOVER111_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 476
-        width: 4
-        height: 4
+        x: 50
+        y: 404
+        width: 402
+        height: 500
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4045b48dea4547439c8aeec6b7f612c
+      spriteID: ec89b8f0477cd2849b51bef9f2d25ed8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tronco
+      name: SPRITEGAMEOVER111_2
       rect:
         serializedVersion: 2
-        x: 355
-        y: 38
-        width: 81
-        height: 443
+        x: 502
+        y: 796
+        width: 123
+        height: 108
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb40ccbbf9864414596974f83fd3c861
+      spriteID: 7782afa916a15754a9b036101e1bd910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin
+      name: SPRITEGAMEOVER111_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 288
-        width: 252
-        height: 89
+        x: 533
+        y: 691
+        width: 62
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03a5b4a20c44c674599017e5ba18eb47
+      spriteID: 785d248ea7ef3254291baf07f73ca301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: conta
+      name: SPRITEGAMEOVER111_4
       rect:
         serializedVersion: 2
-        x: 21
-        y: 192
-        width: 210
-        height: 89
+        x: 49
+        y: 260
+        width: 202
+        height: 82
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4d46fe73f3528441b9528438663e58b
+      spriteID: d3ceaf72c0b7b9c418382c3295890e58
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "op\xE7\xE3o"
+      name: SPRITEGAMEOVER111_5
       rect:
         serializedVersion: 2
-        x: 14
-        y: 121
-        width: 192
-        height: 63
+        x: 287
+        y: 264
+        width: 199
+        height: 78
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43d12a59b08a55149858f99b5a9b4ae4
+      spriteID: 9a60f01e5decba84b9739f9d08a25eba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITEGAMEOVER111_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 267
+        width: 240
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe03197a7af26e74a819c0f4be4aa382
       vertices: []
       indices: 
       edges: []
@@ -232,12 +255,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d6b966fc75f76304f94034ea16dcc12f
+    spriteID: def1f132bf6bc484d8504acc786d2d47
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
